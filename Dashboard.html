@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashStack Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body> 
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+              
+            </div>
+            <ul>
+                <div class="sidebar">
+                    <h2>DashStack</h2>
+                    <a href="#" class="active">Dashboard</a>
+                    <a href="#">Products</a>
+                    <a href="#">Favorites</a>
+                    <a href="#">Inbox</a>
+                    <a href="#">Order Lists</a>
+                    <a href="#">Product Stock</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Calendar</a>
+                    <a href="#">To-Do</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Invoice</a>
+                    <a href="#">UI Elements</a>
+                    <a href="#">Team</a>
+                    <a href="#">Table</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Logout</a>
+                </div>
+            </ul>
+            <div class="bottom-links">
+                <ul>
+                    <li><i class="fas fa-cog"></i><span>Settings</span></li>
+                    <li><i class="fas fa-sign-out-alt"></i><span>Logout</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="topbar">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="user-settings">
+                    <i class="fas fa-bell"></i>
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                    <span>Moni Roy</span>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3>Total User</h3>
+                    <p>40,689</p>
+                    <span class="up">8.5% Up from yesterday</span>
+                </div>
+                <div class="card">
+                    <h3>Total Order</h3>
+                    <p>10,293</p>
+                    <span class="up">1.3% Up from past week</span>
+                </div>
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p>$89,000</p>
+                    <span class="down">4.3% Down from yesterday</span>
+                </div>
+                <div class="card">
+                    <h3>Total Pending</h3>
+                    <p>2,040</p>
+                    <span class="up">1.8% Up from yesterday</span>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="sales-chart">
+                    <h3>Sales Details</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="deals-details">
+                    <h3>Deals Details</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Location</th>
+                                <th>Date - Time</th>
+                                <th>Piece</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>6096 Marjolaine Landing</td>
+                                <td>12.09.2019 - 12:53 PM</td>
+                                <td>423</td>
+                                <td>$34,295</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                 
+                
+            </div>
+
+
+
+           
+        </div>
+        <div class="products-page">
+            <h1>Products</h1>
+            <!-- Promo Banner -->
+            <div class="promo-banner">
+                <h2>Enjoy free home delivery in this summer</h2>
+                <p>September 12-22 - Pick from trendy Designer Dress</p>
+                <button>Get Started</button>
+            </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="DALL·E 2024-09-09 12.30.38 - Apple Watches with different designs. One with a minimalist sleek black body, leather strap, and analog display. Another with a silver metallic case, .webp" alt="Apple Watch">
+                <h3>Apple Watch Series 4</h3>
+                <p>$120.00</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(131)</span>
+                </div>
+                <button>Edit Product</button>
+            </div>
+
+            <div class="product-card">
+                <img src="DALL·E 2024-09-09 12.32.49 - Two more Apple Watches with unique designs. One with a rose gold case, a white ceramic band, and a luxury-style analog display. The second with a rugg.webp" alt="Apple Watch">
+                <h3>Apple Watch Series 4</h3>
+                <p>$120.00</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(131)</span>
+                </div>
+                <button>Edit Product</button>
+            </div>
+
+            <div class="product-card">
+                <img src="DALL·E 2024-09-09 12.38.15 - A sleek and modern wristwatch design with a round face, minimalistic dial, silver metal casing, and a black leather strap. The watch face should featu.webp" alt="Apple Watch">
+                <h3>Apple Watch Series 4</h3>
+                <p>$120.00</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(131)</span>
+                </div>
+                <button>Edit Product</button>
+            </div>
+    </div>
+    <div class="logo">
+        <h2>Favorites</h2>
+    </div>
+    <div class="user-settings">
+        
+    </div>
+</div>
+
+    <div class="favorites-section">
+        <div class="favorites-grid">
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.30.38 - Apple Watches with different designs. One with a minimalist sleek black body, leather strap, and analog display. Another with a silver metallic case, .webp" alt="Apple Watch">
+                <h3>Apple Watch Series 4</h3>
+                <p class="price">$120.00</p>
+                <div class="rating">★ ★ ★ ★ ★ (131)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.32.49 - Two more Apple Watches with unique designs. One with a rose gold case, a white ceramic band, and a luxury-style analog display. The second with a rugg.webp" alt="Air Max 270">
+                <h3>Air Max 270</h3>
+                <p class="price">$60.00</p>
+                <div class="rating">★ ★ ★ ★ ★ (64)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.38.15 - A sleek and modern wristwatch design with a round face, minimalistic dial, silver metal casing, and a black leather strap. The watch face should featu.webp" alt="Minimal Chair">
+                <h3>Minimal Chair Tool</h3>
+                <p class="price">$24.59</p>
+                <div class="rating">★ ★ ★ ★ ★ (63)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.30.38 - Apple Watches with different designs. One with a minimalist sleek black body, leather strap, and analog display. Another with a silver metallic case, .webp" alt="Amazfit Vip">
+                <h3>Amazfit Vip</h3>
+                <p class="price">$70.35</p>
+                <div class="rating">★ ★ ★ ★ ★ (52)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.38.15 - A sleek and modern wristwatch design with a round face, minimalistic dial, silver metal casing, and a black leather strap. The watch face should featu.webp" alt="Gumbo Mouse">
+                <h3>Gumbo Mouse</h3>
+                <p class="price">$25.00</p>
+                <div class="rating">★ ★ ★ ★ ★ (45)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.32.49 - Two more Apple Watches with unique designs. One with a rose gold case, a white ceramic band, and a luxury-style analog display. The second with a rugg.webp" alt="Camera Tripod">
+                <h3>Camera Tripod</h3>
+                <p class="price">$38.99</p>
+                <div class="rating">★ ★ ★ ★ ★ (39)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.32.49 - Two more Apple Watches with unique designs. One with a rose gold case, a white ceramic band, and a luxury-style analog display. The second with a rugg.webp" alt="Camera Tripod">
+                <h3>Camera Tripod</h3>
+                <p class="price">$38.99</p>
+                <div class="rating">★ ★ ★ ★ ★ (39)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            <div class="favorite-item">
+                <img src="DALL·E 2024-09-09 12.30.38 - Apple Watches with different designs. One with a minimalist sleek black body, leather strap, and analog display. Another with a silver metallic case, .webp" alt="Camera Tripod">
+                <h3>Camera Tripod</h3>
+                <p class="price">$38.99</p>
+                <div class="rating">★ ★ ★ ★ ★ (39)</div>
+                <a href="#" class="edit-btn">Edit Product</a>
+                <button class="favorite-btn">❤️</button>
+            </div>
+            
+        </div>
+      
+        
+    </div>
+            
+        </div>
+        
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
